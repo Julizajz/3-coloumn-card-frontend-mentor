@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: hsl(0, 0%, 95%);
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  .card {
+    &-orange {
+      background-color: hsl(31, 77%, 52%);
+    }
+    &-blue {
+      background-color: hsl(184, 100%, 22%);
+    }
+    &-dark {
+      background-color: hsl(179, 100%, 13%);
+    }
+  }
+
+  .col-sm {
+    width: 250px;
+    height: 400px;
+    padding: 33px;
+
+    h4 {
+      font-family: "Big Shoulders Display", cursive;
+      font-size: 28px;
+      padding: 20px 0;
+      color: hsl(0, 0%, 95%);
+    }
+
+    p {
+      color: hsla(0, 0%, 100%, 0.75);
+      line-height: 1.6;
+      font-family: "Lexend Deca", sans-serif;
+      margin-bottom: 40px;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: "Lexend Deca", sans-serif;
+      background-color: hsl(0, 0%, 95%);
+      border: 2px solid hsl(0, 0%, 95%);
+      padding: 10px;
+      border-radius: 50px;
+      width: 10px;
+    }
+  }
+}
+
+.btn {
+  &-orange {
+    color: hsl(31, 77%, 52%);
+  }
+  &-blue {
+    color: hsl(184, 100%, 22%);
+  }
+  &-dark {
+    color: hsl(179, 100%, 13%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .row .col-sm:first-child {
+    margin-top: 100px;
+  }
+}

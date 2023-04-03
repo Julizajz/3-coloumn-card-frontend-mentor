@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: hsl(0, 0%, 95%);
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.row .card-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.row .card-blue {
+  background-color: hsl(184, 100%, 22%);
+}
+.row .card-dark {
+  background-color: hsl(179, 100%, 13%);
+}
+.row .col-sm {
+  width: 250px;
+  height: 400px;
+  padding: 33px;
+}
+.row .col-sm h4 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 28px;
+  padding: 20px 0;
+  color: hsl(0, 0%, 95%);
+}
+.row .col-sm p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 40px;
+}
+.row .col-sm a {
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  padding: 10px;
+  border-radius: 50px;
+  width: 10px;
+}
+
+.btn-orange {
+  color: hsl(31, 77%, 52%);
+}
+.btn-blue {
+  color: hsl(184, 100%, 22%);
+}
+.btn-dark {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .row .col-sm:first-child {
+    margin-top: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
